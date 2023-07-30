@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <!-- heading -->
+        <div class="heading">
+          <h1>Expense Tracker</h1>
+          <div class="balance">
+            <h2 id="total_balance">RS 0</h2>
+            <h3>Your Balance</h3>
+          </div>
+        </div>
+        <!-- transition -->
+        <div class="transaction">
+          <p>Transaction</p>
+          <hr />
+        </div>
+
+        <!-- list item container -->
+        <div class="item-list-container">
+          <!-- <div class="item-container">
+            <div class="item">
+              <div class="item-text">
+                <p>Internet Bill</p>
+                <p>RS: -1200</p>
+              </div>
+              <div class="debit">D</div>
+            </div>
+            <div class="item-btn">
+              <button id="editBtn">Edit</button>
+              <button id="deleteBtn">Delete</button>
+            </div>
+          </div> -->
+
+          <!-- <div class="it\em">
+            <div class="item-text">
+              <p>Internet Bill</p>
+              <p>RS: -1200</p>
+            </div>
+            <div class="credit">C</div>
+          </div> -->
+        </div>
+
+        <!-- Add transition container -->
+        <div class="add-transaction-container">
+          <h2>Add Transaction</h2>
+
+          <div class="form">
+            <div class="col">
+              <label for="text">Description:</label>
+              <input
+                type="text"
+                id="text"
+                name="textextt"
+                placeholder="Enter Desc"
+              />
+            </div>
+
+            <div class="col">
+              <label for="amount">Amount:</label>
+              <input
+                type="number"
+                id="amount"
+                name="amount"
+                placeholder="Enter Amount"
+              />
+            </div>
+          </div>
+
+          <div class="btn">
+            <button id="creditbtn">Credit</button>
+            <button id="debitbtn">Debit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
